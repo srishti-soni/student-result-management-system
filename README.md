@@ -171,8 +171,6 @@ The app will open at **http://localhost:8501**.
 
 ## 🖼️ Screenshots
 
-> _Add your screenshots to `docs/screenshots/` and update the paths below._
-
 | Login                                | Admin Dashboard                      | Teacher Analytics                            |
 | ------------------------------------ | ------------------------------------ | -------------------------------------------- |
 | ![Login](docs/screenshots/login.png) | ![Admin](docs/screenshots/admin.png) | ![Analytics](docs/screenshots/analytics.png) |
