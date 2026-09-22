@@ -1,2 +1,6 @@
 *.env
 *.venv
+srms-plan.md
+*.db
+__pycache__
+__init__.py

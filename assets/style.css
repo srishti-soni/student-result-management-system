@@ -1,0 +1,194 @@
+/* ─── Google Fonts ─────────────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ─── Global ────────────────────────────────────────────────────────────── */
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif !important;
+}
+
+/* ─── Hide default Streamlit chrome ─────────────────────────────────────── */
+/* Keep header visible so the sidebar collapse/expand toggle still works     */
+#MainMenu { visibility: hidden; }
+footer    { visibility: hidden; }
+/* Shrink the header bar height so it doesn't take up much space             */
+header[data-testid="stHeader"] {
+    background: transparent !important;
+    height: 2.5rem !important;
+    min-height: 2.5rem !important;
+}
+
+/* ─── Main content area ──────────────────────────────────────────────────── */
+.block-container {
+    padding-top: 1.5rem !important;
+    padding-bottom: 2rem !important;
+    max-width: 1200px !important;
+}
+
+/* ─── Sidebar ────────────────────────────────────────────────────────────── */
+section[data-testid="stSidebar"] {
+    background: linear-gradient(160deg, #1e1b4b 0%, #312e81 60%, #4338ca 100%) !important;
+}
+section[data-testid="stSidebar"] * {
+    color: #e0e7ff !important;
+}
+section[data-testid="stSidebar"] .stRadio label {
+    font-size: 0.95rem !important;
+    padding: 0.35rem 0.5rem !important;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+section[data-testid="stSidebar"] .stRadio label:hover {
+    background: rgba(255,255,255,0.08) !important;
+}
+section[data-testid="stSidebar"] hr {
+    border-color: rgba(255,255,255,0.15) !important;
+}
+section[data-testid="stSidebar"] .stButton button {
+    background: rgba(255,255,255,0.1) !important;
+    border: 1px solid rgba(255,255,255,0.2) !important;
+    color: #e0e7ff !important;
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+}
+section[data-testid="stSidebar"] .stButton button:hover {
+    background: rgba(255,255,255,0.2) !important;
+}
+
+/* ─── Primary buttons ────────────────────────────────────────────────────── */
+div.stButton > button[kind="primary"],
+div.stFormSubmitButton > button {
+    background: #4F46E5 !important;
+    border: none !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    padding: 0.5rem 1.25rem !important;
+    transition: background 0.2s, transform 0.1s;
+}
+div.stButton > button:hover,
+div.stFormSubmitButton > button:hover {
+    background: #4338ca !important;
+    transform: translateY(-1px);
+}
+
+/* ─── Download button ────────────────────────────────────────────────────── */
+div.stDownloadButton > button {
+    background: #0891b2 !important;
+    border: none !important;
+    color: #fff !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+}
+div.stDownloadButton > button:hover {
+    background: #0e7490 !important;
+}
+
+/* ─── Metric cards ───────────────────────────────────────────────────────── */
+div[data-testid="metric-container"] {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+}
+div[data-testid="metric-container"] label {
+    font-size: 0.78rem !important;
+    font-weight: 600 !important;
+    color: #64748b !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+div[data-testid="metric-container"] div[data-testid="stMetricValue"] {
+    font-size: 1.75rem !important;
+    font-weight: 700 !important;
+    color: #1e293b !important;
+}
+
+/* ─── DataFrames / tables ────────────────────────────────────────────────── */
+div[data-testid="stDataFrame"] {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0 !important;
+}
+
+/* ─── Forms ──────────────────────────────────────────────────────────────── */
+div[data-testid="stForm"] {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 1.5rem !important;
+}
+
+/* ─── Alerts ─────────────────────────────────────────────────────────────── */
+div[data-testid="stAlert"] {
+    border-radius: 8px !important;
+}
+
+/* ─── Input fields ───────────────────────────────────────────────────────── */
+div[data-testid="stTextInput"] input,
+div[data-testid="stNumberInput"] input,
+div[data-testid="stSelectbox"] select {
+    border-radius: 6px !important;
+    border-color: #d1d5db !important;
+}
+div[data-testid="stTextInput"] input:focus {
+    border-color: #4F46E5 !important;
+    box-shadow: 0 0 0 3px rgba(79,70,229,0.12) !important;
+}
+
+/* ─── Divider ────────────────────────────────────────────────────────────── */
+hr {
+    border-color: #e2e8f0 !important;
+    margin: 1rem 0 !important;
+}
+
+/* ─── Page header hero ───────────────────────────────────────────────────── */
+.srms-page-header {
+    background: linear-gradient(135deg, #4F46E5 0%, #7C3AED 100%);
+    color: #fff;
+    border-radius: 12px;
+    padding: 1.25rem 1.75rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.srms-page-header .icon {
+    font-size: 2.2rem;
+    line-height: 1;
+}
+.srms-page-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+    color: #fff;
+}
+.srms-page-header p {
+    font-size: 0.875rem;
+    margin: 0.15rem 0 0;
+    color: rgba(255,255,255,0.8);
+}
+
+/* ─── Grade badges ───────────────────────────────────────────────────────── */
+.grade-badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    font-size: 0.82rem;
+}
+.grade-A { background:#dcfce7; color:#15803d; }
+.grade-B { background:#dbeafe; color:#1d4ed8; }
+.grade-C { background:#ede9fe; color:#6d28d9; }
+.grade-D { background:#fef9c3; color:#a16207; }
+.grade-E { background:#ffedd5; color:#c2410c; }
+.grade-F { background:#fee2e2; color:#b91c1c; }
+
+/* ─── Login page ─────────────────────────────────────────────────────────── */
+.login-card {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 24px rgba(79,70,229,0.08);
+}
